@@ -55,6 +55,7 @@ This is yet another Famicom AV mod with following features:
 
 ### References
 
+- [Nintendo FAMICOM Mod (USB Power, Composite Video, Stereo Sound)](FamicomMod.pdf) (web link is dead)
 - https://miko.mobi/famav.htm
 - https://8bitplus.co.uk/your-consoles/famicom-av-mod/
 - https://8bitplus.co.uk/projects/famicom-av-mod-nintendo/
