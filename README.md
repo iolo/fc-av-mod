@@ -12,8 +12,8 @@ This is yet another Famicom AV mod with following features:
 - 2 x 22K resistors
 - 1 x 0.47uF electrolytic capacitor
 - 2 x 4.7uF capacitors(optional)
-- USB-C PD decoy breakout board
-- 3.5mm 4 pole connector(female)
+- USB-C connector(female)
+- 3.5mm 3 or 4 pole connector(female)
 - 1 x LED
 - 1 x 330R resistor
 - small PCB
@@ -33,25 +33,43 @@ This is yet another Famicom AV mod with following features:
 ### Build daughter board
 
 1. 4 pin jumper connector(male; connect with Step. 2)
-    - VCC - Power Switch
-    - GND - GND
-    - Video - 0.47uF capacitor - Collector of C1318
-    - Audio - Audio Left & Right(TODO: Streo?)
-2. USB-C PD decoy board
-    - Make sure 5V output!
-    - VCC - Power Switch
-    - GND
+    1. VCC - Power Switch
+    2. GND - GND
+    3. Video - 0.47uF capacitor - Collector of C1318
+    4. Audio - **Audio Output**(TODO: Stereo?)
+2. USB-C connector
+    1. VCC - Power Switch(center)
+    2. GND
 3. C1318 Transistor
-    - Base - VCC
-    - Collector - 0.47uF capacitor <- FC Video
-    - Base - 22K resistor - Collector
-    - Emitter - Composite Video
-    - Emitter - 22K resistor - GND
-4. 3.5mm 4 pole connector
-    - Audio Left
-    - Audio Right
-    - GND
-    - Composite Video
+    1. Base - VCC
+    2. Collector - 0.47uF capacitor <- FC Video
+    3. Base - 22K resistor - Collector
+    4. Emitter - **Video Output**
+    5. Emitter - 22K resistor - GND
+4. 3.5mm 3 or 4 pole connector
+    - NOTE: we have no stereo!
+    - NOTE: 3.5mm 4 pole connector is varying by manufacturer
+    - 3 pole connector
+        1. Audio Left - Audio Output(from 1.3)
+        2. Audio Right - Video Output(from 3.4)
+        3. GND
+    - 4 pole connector
+        1. Audio Left - Audio Output(from 1.3)
+        2. Audio Right - Audio Output(from 1.3)
+        3. GND
+        4. Video - Video Output(from 3.4)
+
+### Some photos
+
+![Tear-off RF & PSU board](tearoff_rf_board.jpg)
+
+![Test Video Output](test_video_output.jpg)
+
+![Test Daughter Board](test_daughter_board.jpg)
+
+![Connect Daughter Board - Top](daughter_board_top.jpg)
+
+![Connect Daughter Board - Rear](daughter_board_rear.jpg)
 
 ### References
 
